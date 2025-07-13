@@ -1,0 +1,58 @@
+[
+  {
+    "Id": 13,
+    "EmployeeId": "EX12",
+    "Name": "Example",
+    "Department": "IDE",
+    "Attending": true,
+    "Leaving": true,
+    "Location": "office",
+    "InFeeling": "tired",
+    "OutFeeling": "neutral",
+    "Date": "2025-07-12T00:00:00",
+    "SubmittedAt": "2025-07-12T18:17:46.719549+04:00",
+    "Notes": "Presentation day!"
+  },
+  {
+    "Id": 14,
+    "EmployeeId": "EX1",
+    "Name": "Ay",
+    "Department": "IDE",
+    "Attending": true,
+    "Leaving": true,
+    "Location": "office",
+    "InFeeling": "neutral",
+    "OutFeeling": "not-satisfied",
+    "Date": "2025-07-13T00:00:00",
+    "SubmittedAt": "2025-07-13T02:11:23.552179+04:00",
+    "Notes": "testing 123"
+  },
+  {
+    "Id": 15,
+    "EmployeeId": "Testing1",
+    "Name": "test1",
+    "Department": "IDE",
+    "Attending": true,
+    "Leaving": true,
+    "Location": "office",
+    "InFeeling": "neutral",
+    "OutFeeling": "not-satisfied",
+    "Date": "2025-07-13T00:00:00",
+    "SubmittedAt": "2025-07-13T08:56:45.101672+04:00",
+    "Notes": ""
+  },
+  {
+    "Id": 16,
+    "EmployeeId": "Muste65",
+    "Name": "fgf",
+    "Department": "IDE",
+    "Attending": true,
+    "Leaving": true,
+    "Location": "office",
+    "InFeeling": "tired",
+    "OutFeeling": "satisfied",
+    "Date": "2025-07-13T00:00:00",
+    "SubmittedAt": "2025-07-13T09:36:55.427025+04:00",
+    "Notes": ""
+  }
+]

@@ -1,0 +1,187 @@
+/* =================================
+   ATTENDANCE CONTAINER STYLES
+   ================================= */
+
+/* Main container */
+.attendance-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Form elements */
+.full-width {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.full-width:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+/* Checkbox styling */
+.checkbox-container {
+  margin: 1.5rem 0;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  transition: background-color 0.2s ease;
+}
+
+.checkbox-container:hover {
+  background-color: #f1f3f5;
+}
+
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: #495057;
+}
+
+/* Button styling */
+.button-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.button-container button {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #007bff;
+  color: white;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.button-container button:active {
+  transform: translateY(0);
+}
+
+/* Success message */
+.success-message {
+  margin-top: 1.5rem;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  padding: 1rem;
+  animation: slideIn 0.3s ease-out;
+}
+
+.success-message mat-card-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #155724;
+  font-weight: 500;
+}
+
+.success-message mat-card-content::before {
+  content: "✓";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Card styling */
+mat-card {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+mat-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .attendance-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .full-width {
+    margin-bottom: 1rem;
+  }
+  
+  .checkbox-container {
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+  
+  .button-container button {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Dark theme support */
+@media (prefers-color-scheme: dark) {
+  .attendance-container {
+    background-color: #2d3748;
+    color: #e2e8f0;
+  }
+  
+  .checkbox-container {
+    background-color: #4a5568;
+    border-color: #718096;
+  }
+  
+  .checkbox-container:hover {
+    background-color: #5a6578;
+  }
+  
+  .checkbox-container label {
+    color: #e2e8f0;
+  }
+  
+  .success-message {
+    background-color: #22543d;
+    border-color: #38a169;
+    color: #68d391;
+  }
+  
+  mat-card {
+    background-color: #4a5568;
+    color: #e2e8f0;
+  }
+}
